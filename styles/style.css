@@ -99,3 +99,39 @@ button{
     text-align:end;
     font-size: 20px;
 }
+/*fourth section*/
+.fourth-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container{
+    box-sizing: border-box;
+    width: 65vw;
+    padding: 37px 80px;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.container button{
+    border: 2px white solid;
+    border-radius: 10%;
+    font-size: 18px;
+}
+.text .title{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/*Footer*/
+.fifth-section{
+    color: #E5e7eb;
+    background-color: #1f2937;
+    padding: 30px;
+    text-align: center;
+}
