@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+body{
+    font-family:  sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    font-size: 18px;
+}
+/*first section*/
+.first-section{
+    color: #E5e7eb;
+    background-color: #1f2937;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+#header, .main-landing-content{
+    width: 74vw;
+    margin: 20px auto;
+    display: flex;
+}
+#header .logo{ /*mudar a fonte pra deixar mais bonito*/
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0px 0px 0px auto;
+    padding: 0px;
+    gap: 28px;
+}
+a{
+    text-decoration: none;  
+    color: #E5e7eb;
+}
+
+.main-landing-content{
+    margin-top: 95px;
+    justify-content: space-between;
+}
+.main-landing-content .text{
+    flex-basis: 50%;
+}
+.landing-image{
+    flex-basis: 20%;
+}
+.first-section-title{
+    font-size: 44px;
+    font-weight: bolder;
+    color: white;
+}
+button{
+    background-color: #3882f6;
+    padding: 10px;
+    border-radius: 10%;
+    border: #3882f6;
+    color: white;
+    font-weight: bold;
+}
+/*Second section*/
+.second-section{
+    width:70vw;
+    margin: 50px auto 110px auto;
+}
+.second-section .title{
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.random-information{
+    display: flex;
+    justify-content: space-between;
+}
+.random-information .item{
+    flex-basis: 190px;
+    text-align: center;
+    color: #4e4e4e;
+}
+/*Third section*/
+.third-section{
+    font-family: sans;
+    background-color: #e5e7eb;
+    padding: 120px 17vw;
+}
+.quote{
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-style: italic;
+    color: #444b55;
+}
+.citation{
+    padding: 10px;
+    text-align:end;
+    font-size: 20px;
+}
