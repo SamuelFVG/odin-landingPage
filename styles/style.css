@@ -137,12 +137,12 @@ a:hover{
     background-color: #464646;
     box-sizing: border-box;
     width: 70vw;
-    height: 20vh;
-    padding: 37px 80px;
+    height: calc(50vh - 15vw);
+    padding: 4px 80px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 .container button{
     background-color: cornflowerblue;
