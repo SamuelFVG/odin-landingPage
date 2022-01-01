@@ -1,137 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
 body{
-    font-family:  sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    font-size: 18px;
 }
 /*first section*/
 .first-section{
     color: #E5e7eb;
     background-color: #1f2937;
-    padding-bottom: 120px;
+    box-sizing: border-box;
+    padding-top: 2vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
 #header, .main-landing-content{
+    display: flex;
     width: 74vw;
-    margin: 20px auto;
-    display: flex;
-}
-#header .logo{ /*mudar a fonte pra deixar mais bonito*/
-    color: white;
-    font-size: 26px;
-    font-weight: 700;
-    font-style: italic;
-}
-ul{
-    list-style: none;
-    display: flex;
-    margin: 0px 0px 0px auto;
-    padding: 0px;
-    gap: 28px;
-}
-a{
-    text-decoration: none;  
-    color: #E5e7eb;
-}
-
-.main-landing-content{
-    margin-top: 95px;
     justify-content: space-between;
 }
-.main-landing-content .text{
-    flex-basis: 50%;
+#header .logo, .first-section-title, button{
+    color: white;
+    font-weight: bold;
 }
-.landing-image{
-    flex-basis: 20%;
+#header .logo{ 
+    font-size: 26px;
+    font-style: italic; 
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5vw;
+}
+a{
+    color: #E5e7eb;
+    text-decoration: none;  
+}
+.main-landing-content{
+    margin: auto 0;
+}
+.main-landing-content .text{
+    width: 38vw;
 }
 .first-section-title{
     font-size: 44px;
-    font-weight: bolder;
-    color: white;
 }
 button{
     background-color: #3882f6;
-    padding: 10px;
-    border-radius: 10%;
     border: #3882f6;
-    color: white;
-    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
 }
 /*Second section*/
 .second-section{
-    width:70vw;
-    margin: 50px auto 110px auto;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .second-section .title{
-    font-size: 36px;
-    font-weight: bold;
     color: #1f2937;
-    text-align: center;
-    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 5vh;
 }
 .random-information{
+    width: 77vw;
+    margin: 0px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
 }
 .random-information .item{
-    flex-basis: 190px;
-    text-align: center;
     color: #4e4e4e;
+    flex-basis: 15vw;
 }
 /*Third section*/
 .third-section{
-    font-family: sans;
     background-color: #e5e7eb;
-    padding: 120px 17vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .quote{
+    color: #444b55;
     font-family: 'Roboto';
     font-size: 36px;
     font-style: italic;
-    color: #444b55;
+    width: 55vw;
 }
 .citation{
-    padding: 10px;
-    text-align:end;
+    font-family: sans-serif;
     font-size: 20px;
+    font-weight: 900;
+    text-align: end;
 }
 /*fourth section*/
 .fourth-section{
     display: flex;
-    justify-content: center;
+    height: 45vh;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    justify-content: center;
 }
 .container{
-    box-sizing: border-box;
-    width: 65vw;
-    padding: 37px 80px;
-    background-color: #3882f6;
     color: white;
+    background-color: #3882f6;
+    box-sizing: border-box;
+    width: 70vw;
+    height: 20vh;
+    padding: 37px 80px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 .container button{
-    border: 2px white solid;
-    border-radius: 10%;
-    font-size: 18px;
+    border:white solid;
 }
 .text .title{
-    font-size: 26px;
     font-weight: bold;
+    font-size: 24px;
 }
-
 /*Footer*/
 .fifth-section{
     color: #E5e7eb;
     background-color: #1f2937;
-    padding: 30px;
     text-align: center;
+    padding: 2.5vh;
 }
