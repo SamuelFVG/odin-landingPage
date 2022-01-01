@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 body{
     font-size: 18px;
     margin: 0px;
@@ -6,10 +7,11 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 /*first section*/
 .first-section{
     color: #E5e7eb;
-    background-color: #1f2937;
+    background-color: #1e1e1e;
     box-sizing: border-box;
     padding-top: 2vh;
     height: 100vh;
@@ -22,24 +24,34 @@ body{
     width: 74vw;
     justify-content: space-between;
 }
+.main-landing-content{
+    align-items: center;
+}
 #header .logo, .first-section-title, button{
     color: white;
     font-weight: bold;
 }
 #header .logo{ 
-    font-size: 26px;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 4px 6px black;
     font-style: italic; 
 }
+
 ul{
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 1.5vw;
+    gap: 1vw;
 }
 a{
     color: #E5e7eb;
     text-decoration: none;  
+}
+a:hover{
+    color:cornflowerblue;
+    text-decoration: underline;
 }
 .main-landing-content{
     margin: auto 0;
@@ -50,12 +62,17 @@ a{
 .first-section-title{
     font-size: 44px;
 }
-button{
-    background-color: #3882f6;
-    border: #3882f6;
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 5px;
+.slogan{
+    height: 6vh;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+.presentation{
+    line-height: 4vh;
+}
+.landing-image{
+    width: 300px;
 }
 /*Second section*/
 .second-section{
@@ -66,11 +83,12 @@ button{
     flex-direction: column;
 }
 .second-section .title{
-    color: #1f2937;
+    color: #1e1e1e;
     font-weight: bold;
     font-size: 36px;
     margin-bottom: 5vh;
 }
+
 .random-information{
     width: 77vw;
     margin: 0px auto;
@@ -81,6 +99,10 @@ button{
 .random-information .item{
     color: #4e4e4e;
     flex-basis: 15vw;
+}
+.random-information .item img{
+    height: 150px;
+    width: 150px;
 }
 /*Third section*/
 .third-section{
@@ -112,7 +134,7 @@ button{
 }
 .container{
     color: white;
-    background-color: #3882f6;
+    background-color: #464646;
     box-sizing: border-box;
     width: 70vw;
     height: 20vh;
@@ -123,7 +145,11 @@ button{
     align-items: flex-end;
 }
 .container button{
-    border:white solid;
+    background-color: cornflowerblue;
+    border: cornflowerblue 1px solid;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
 }
 .text .title{
     font-weight: bold;
@@ -132,7 +158,8 @@ button{
 /*Footer*/
 .fifth-section{
     color: #E5e7eb;
-    background-color: #1f2937;
+    background-color: #1e1e1e;
     text-align: center;
     padding: 2.5vh;
 }
+
