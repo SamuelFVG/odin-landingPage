@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SFG Development</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <div class="first-section">
-        <div id="header">
-            <div class="logo">SFG</div>
-            <ul>
-                <li><a href="links/about.html">About Us</a></li>
-                <li><a href="#projects">Important Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="main-landing-content">
+    <section class="land">
+        <header id="header">
+            <h1 class="logo">SFG</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#notable-projects">Notable projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
             <div class="text">
-                <div class="first-section-title">SFG Development</div>
-                <div class="slogan">Software development with excelence and quality</div>
-                <div class="presentation">We are a brazilian company focused in delivering the best software possible to our clients. Since 2002, we transform businesses with excellent software solutions!</div>
+                <h1>SFG Development</h1>
+                <h3>Software development with excelence and quality</h3>
+                <p>We are a brazilian company focused in delivering the best software possible to our clients. Since 2002, we transform businesses with excellent software solutions!</p>
+                <button>Form</button>
             </div>
-            <img class="landing-image" src="images/main-image.svg"> <!--Do not forget to give it an alt-->
-        </div>
-    </div>
+            <img src="images/main-image.svg" alt="image of a computer ">
+        </main>
+    </section>
 
-    <div class="second-section" id="projects">
-        <div class="title">Important Projects</div>
-        <div class="random-information" class="text">
-            <div class="item">
-                <img src="images/coogle.svg" alt="coogle logo"> <!--Do not forget to give it an alt-->
-                <div>Our main project, Coogle Search, is the most popular search engine in Brazil</div>
+    <section id="about">
+        <img src="images/about.png" alt="Html tag image">
+        <div class="text">
+            <h1>About us</h1>
+            <p>We are a dynamic software company focused on excellence. Working as consultants and as a software boutique, we aim to always meet our clients' needs in the best possible way. We have nearly two decades of experience and good results in the area, so know that regardless of your needs, we will guarantee a good solution.</p>
+        </div>
+    </section>
+
+    <section id="notable-projects">
+        <h1>Our Most Notable projects Until Now</h1>
+        <div class="projects">
+            <div>
+                <img src="images/coogle.svg" alt="coogle logo">
+                <p>Our main project, Coogle Search, is the most popular search engine in Brazil</p>
             </div>
-            <div class="item">
-                <img src="images/ibank.svg" alt="ibank logo"> <!--Do not forget to give it an alt-->
-                <div>Our consultants developed part of the codebase of iBank, a direct competitor of Santander and NuBank</div>
+            <div>
+                <img style="border-radius: 50%;" src="images/ibank.svg" alt="ibank logo">
+                <p>Our consultants developed part of the codebase of iBank, a direct competitor of Santander and NuBank</p>
             </div>
-            <div class="item">
-                <img src="images/better-taxi.png" alt="better taxi logo"> <!--Do not forget to give it an alt-->
-                <div>We developed Better Taxi's website. Better Taxi is one of the most used transportation services in 2021 </div>
+            <div>
+                <img style="border-radius: 50%;" src="images/better-taxi.png" alt="better taxi logo">
+                <p>We developed Better Taxi's website. Better Taxi is one of the most used transportation services in 2021 </p>
             </div>
-            <div class="item">
-                <img src="images/java-cafe.png" alt="java coffee logo"> <!--Do not forget to give it an alt-->
-                <div>We developed Java Coffee's website.</div>
+            <div>
+                <img style="border-radius: 50%;" src="images/java-coffee.png" alt="java coffee logo"> 
+                <p>We developed Java Coffee's website</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="third-section">
-        <div class="quote">
-            Our digital presence has been much broader since SFG created this amazing website. Our gratitude is immense!
-            <div class="citation">-Ana Mariana, CEO of Better Taxi</div>
-        </div>
-    </div>
-
-    <div class="fourth-section" id="contact">
-        <div class="container">
+    <section id="contact">
+        <article>
             <div class="text">
-                
-                <div class="title">Call to action! It's time!</div>
-                <div class="sing-invitation-text">To get the best digital solution for your company, click that buton and fill the form! </div>
+                <h1>Call to action! It's time!</h1>
+                <p>To get the best digital solution for your company, click that buton and fill the form!</p>
             </div>
-            <div><button>Form</button></div>
-        </div>
-    </div>
+            <button>Form</button>
+        </article>
+    </section>
 
-    <div class="fifth-section"><a href="#header">Back to top</a><BR>Copyright © Samuel Felipe</div>
+    <footer>
+        <a href="#header">Back to top</a>
+        <p>Copyright © Samuel Felipe</p>
+    </footer>
 </body>
 </html>
+<!--"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."-->

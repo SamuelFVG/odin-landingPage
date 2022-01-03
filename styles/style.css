@@ -1,165 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
-body{
-    font-size: 18px;
-    margin: 0px;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-/*first section*/
-.first-section{
-    color: #E5e7eb;
-    background-color: #1e1e1e;
-    box-sizing: border-box;
-    padding-top: 2vh;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#header, .main-landing-content{
-    display: flex;
-    width: 74vw;
-    justify-content: space-between;
-}
-.main-landing-content{
-    align-items: center;
-}
-#header .logo, .first-section-title, button{
-    color: white;
-    font-weight: bold;
-}
-#header .logo{ 
-    font-family: 'Share Tech', sans-serif;
-    font-size: 50px;
-    text-shadow: 2px 4px 6px black;
-    font-style: italic; 
-}
-
-ul{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+/*Landing section*/
+.land{
+    background-color: #1e1e1e;
+    color: #E5e7eb;
+    min-height: 100vh;
+    padding: 2vh 0 2vh;
+    gap: 2vh;
+    display: flex; /*divides header and main*/
+    flex-direction: column;
+    align-items: center; /*centers horizontally*/
+}
+.land header, 
+.land main{
+    width: 72vw;
+    display: flex; /*Divides nav from h2 and tex from img*/ 
+    justify-content: space-between;
+    align-items: center;
+}
+.land main{
+    margin: auto 0px;
+    gap: 2vw; /*Creates a nice space between the text and the image>*/
+}
+main > *{
+    flex: 0 1 40vw; /*sets specific widths for img and .text */
+}
+header .logo{
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 10px 10px 10px black;
+}
+ul{
     list-style: none;
     display: flex;
-    gap: 1vw;
+    gap: 30px;
 }
 a{
-    color: #E5e7eb;
-    text-decoration: none;  
+    text-decoration: none;
+    color: #e5e7eb;
 }
 a:hover{
-    color:cornflowerblue;
     text-decoration: underline;
+    color: #e5e7eb;
 }
-.main-landing-content{
-    margin: auto 0;
+main .text h1{
+    font-size: 36px;
+    margin-bottom: 0.5vh;
+    text-shadow: 2px 4px 6px black;
+
 }
-.main-landing-content .text{
-    width: 38vw;
-}
-.first-section-title{
-    font-size: 44px;
-}
-.slogan{
-    height: 6vh;
+main .text h3{
+    margin-bottom: 1vh;
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
 }
-.presentation{
-    line-height: 4vh;
+main .text button{
+    margin-top: 2vh;
 }
-.landing-image{
-    width: 300px;
+button{
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: rgb(47, 120, 255);
+    padding: 1vh;
+    border-radius: 1vh;
+    border-color: rgb(47, 120, 255);
 }
-/*Second section*/
-.second-section{
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+main img{
+    width: 400px;
+    flex: 0 0 0;
 }
-.second-section .title{
-    color: #1e1e1e;
-    font-weight: bold;
-    font-size: 36px;
-    margin-bottom: 5vh;
-}
-
-.random-information{
-    width: 77vw;
-    margin: 0px auto;
+/*about section*/
+#about{
+    padding: 2vh 0 2vh;
+    
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    min-height: 70vh;
+}
+#about .text{
+    flex-basis: 400px;
+}
+#about .text h1{
+    font-size: 36px;
+    text-shadow: 2px 4px 6px #aaaaaa;
+    margin-bottom: 0.5vh;
+}
+#about img{
+    width: 300px;
+}
+/*projects section*/
+#notable-projects{
+    background-color: #e5e7eb;
+    padding: 2vh 0 2vh;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;  
+}
+#notable-projects h1{
+    font-size: 36px;
+    text-shadow: 2px 4px 6px #e5e7eb;
+    text-align: center;
+}
 
+#notable-projects .projects{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; /*for some reason, i couldn't center this thing just using the parent element, so I'm doing it this way instead*/
+    gap: 5vw;
+    
 }
-.random-information .item{
-    color: #4e4e4e;
-    flex-basis: 15vw;
+.projects div{
+    flex: 0 1 200px;
 }
-.random-information .item img{
+.projects div img{
     height: 150px;
     width: 150px;
+    padding-bottom: 1vh;
 }
-/*Third section*/
-.third-section{
-    background-color: #e5e7eb;
-    height: 60vh;
+/*contact section*/
+#contact{
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.quote{
-    color: #444b55;
-    font-family: 'Roboto';
-    font-size: 36px;
-    font-style: italic;
-    width: 55vw;
-}
-.citation{
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    text-align: end;
-}
-/*fourth section*/
-.fourth-section{
-    display: flex;
-    height: 45vh;
     align-items: center;
-    justify-content: center;
+    min-height: 50vh;
 }
-.container{
-    color: white;
-    background-color: #464646;
-    box-sizing: border-box;
-    width: 70vw;
-    height: calc(50vh - 15vw);
-    padding: 4px 80px;
-    border-radius: 5px;
+#contact article{
+    background-color: rgb(47, 120, 255);
+    border-radius: 10px;
+    padding: 5vh 10vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
-.container button{
-    background-color: cornflowerblue;
-    border: cornflowerblue 1px solid;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
+article .text{
+    color: white;
+    flex: 0 1 35vw;     
 }
-.text .title{
-    font-weight: bold;
-    font-size: 24px;
+article .text h1{
+    font-size: 26px;
+    padding-bottom: 0.5vh;
 }
-/*Footer*/
-.fifth-section{
-    color: #E5e7eb;
-    background-color: #1e1e1e;
-    text-align: center;
-    padding: 2.5vh;
+article button{
+    border-color: white;
+    border-width: 2px;
 }
 
+/*footer*/
+footer{
+    background-color: #1e1e1e;
+    color: #E5e7eb;
+    display: flex;
+    padding: 3vh 0;
+    justify-content: center;
+    gap: 5vw;
+}
